@@ -77,7 +77,7 @@ To test on different data, you should modify the "specific_path" in the '.json' 
 Then, input the path to the modified '.json' file into the --hypes option.
 Below are the modalities mentioned in the paper along with their corresponding specific_path values.
 
-Depth : depth
-RGB : PV_aligned
-Depth_RGB : rgb_based_depth
-RGB_depth : depth_based_rgb
+1) Depth : depth
+2) RGB : PV_aligned
+3) Depth_RGB : rgb_based_depth
+4) RGB_depth : depth_based_rgb
