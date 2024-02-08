@@ -10,7 +10,7 @@ For the --resume option, input the path to the pretrained model. To test differe
 
 - How To Test?
 :
-After downloading the trained models from [Pretrained Link],
+After downloading the trained models from "https://drive.google.com/file/d/1Z_UTJ6un7sVC5Ov6hvLCDky3mfMyZBPF/view?usp=sharing",
 you can perform the test using the following command.
 
 1) ReT/latefusion/depth+depth_rgb
