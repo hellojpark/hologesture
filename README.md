@@ -68,3 +68,14 @@ python test.py --hypes="hyperparameters/train_bare.json" --resume="../../../pret
 14) C3D/bare_only/depth
 
 python test.py --hypes="hyperparameters/train_bare.json" --resume="../../../pretrained/c3d/c3d_bare_only_depth_1st.pth"
+
+- How to test in different modality data?
+:
+To test on different data, you should modify the "specific_path" in the '.json' file to the corresponding modality data.
+Then, input the path to the modified '.json' file into the --hypes option.
+Below are the modalities mentioned in the paper along with their corresponding specific_path values.
+
+Depth : depth
+RGB : PV_aligned
+Depth_RGB : rgb_based_depth
+RGB_depth : depth_based_rgb
