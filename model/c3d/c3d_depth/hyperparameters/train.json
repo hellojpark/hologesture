@@ -1,0 +1,32 @@
+{
+    "name": "Gesture Recognition",
+    "dataset": "Hololens",
+    "epochs": 50,
+    "phase": "train",
+    "hand color": "",
+  "data": {
+    "optical_flow": false,
+    "type": "depth",
+    "normal_type": "frame_normal",
+    "n_classes": 27,
+    "n_frames": 40,
+    "data_path": "../../../../holodataset",
+    "crop_data_path": "../../../crop/crop_lst",
+    "specific_path": "depth",
+    "width": 320,
+    "height": 288,
+    "batch_size": 4
+  },
+    "checkpoints": {
+      "save policy1": "best",
+      "save_policy": "early_stop",
+      "early_stop": 7,
+      "save_name": "c3d_depth_params",
+      "save_dir": "../../random_c3d_10step_save/50epoch_randomseed_c3d_noaug_frame_normal_depth_pretrained_",
+      "save_iters": 30,
+      "tb_path": "../../"
+    },
+    "solver": {
+      "workers": 4
+    }
+}
