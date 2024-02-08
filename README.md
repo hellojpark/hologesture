@@ -12,10 +12,10 @@ After downloading the trained models from [Pretrained Link],
 you can perform the test using the following command.
 
 1) ReT/latefusion/depth+depth_rgb
- python main.py --phase="test" --hypes="hyperparameters/Hololens/train2.json" --fusionkind="late_fusion" --resume="../../../../pretrained/ReT/depth+depthbasedrgb_latefusion_1st.pth"
+python main.py --phase="test" --hypes="hyperparameters/Hololens/train2.json" --fusionkind="late_fusion" --resume="../../../../pretrained/ReT/depth+depthbasedrgb_latefusion_1st.pth"
 
 2) ReT/latefusion/depth+rgb
- python main.py --phase="test" --hypes="hyperparameters/Hololens/train3.json" --fusionkind="late_fusion" --resume="../../../../pretrained/ReT/depth+rgb_latefusion_1st.pth"
+python main.py --phase="test" --hypes="hyperparameters/Hololens/train3.json" --fusionkind="late_fusion" --resume="../../../../pretrained/ReT/depth+rgb_latefusion_1st.pth"
 
 3) ReT/featurefusion/depth+depth_rgb
  python main.py --phase="test" --hypes="hyperparameters/Hololens/train2.json" --fusionkind="feature_fusion" --resume="../../../../pretrained/ReT/depth+depthbasedrgb_featurefusion_1st.pth"
