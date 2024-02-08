@@ -1,0 +1,45 @@
+{
+    "name": "Gesture Recognition",
+    "dataset": "Hololens",
+    "epochs": 50,
+    "phase": "train",
+    "data": {
+      "optical_flow": false,
+      "type": "depth",
+      "normal_type": "frame_normal",
+      "n_classes": 27,
+      "n_frames": 40,
+      "data_path": "../../../holodataset",
+      "crop_data_path": "../../all_color_crop_lst",
+      "specific_path": "depth",
+      "width": 320,
+      "height": 288,
+      "batch_size": 4,
+      "result_dir": "./result"
+    },
+      "checkpoints": {
+        "save_policy": "early_stop",
+        "early_stop": 7,
+        "save_name": "tran_res_depth_params_5thtry",
+        "save_dir": "../../random_save/50epoch_randomseed_color_mixed_depth_raw_noaug_5thtry",
+        "save_iters": 30,
+        "tb_path": "../../../"
+      },
+      "solver": {
+        "type": "AdamW",
+        "workers": 4,
+        "weight_decay": 0.0001,
+        "base_lr": 0.0001,
+        "decay_steps": [50, 75]
+      },
+      "network":{
+        "backbone": "resnet",
+        "pretrained": true,
+        "ff_size": 1024,
+        "n_head": 8,
+        "dropout2d" : 0.1,
+        "dropout1d": 0.5,
+        "n_module": 6
+      }
+  }
+  
