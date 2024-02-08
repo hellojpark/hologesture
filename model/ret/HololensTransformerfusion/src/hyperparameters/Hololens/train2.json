@@ -1,0 +1,47 @@
+{
+    "name": "Gesture Recognition",
+    "dataset": "Hololens",
+    "epochs": 50,
+    "phase": "train",
+  "data": {
+    "optical_flow": false,
+    "type": "depth",
+    "n_classes": 27,
+    "n_frames": 40,
+    "data_path": "../../../../../holodataset",
+    "crop_path": "../../../../crop/crop_lst",
+    "rgb_specific_path": "depth_based_rgb",
+    "depth_specific_path": "depth",
+    "rgb_width": 320,
+    "rgb_height": 152,
+    "depth_width": 320,
+    "depth_height": 288,
+    "rgb_normal_type": "frame_normal",
+    "depth_normal_type": "frame_normal",
+    "batch_size": 4
+  },
+    "checkpoints": {
+      "save_policy": "early_stop",
+      "early_stop": 7,
+      "save_name": "tran_res_fusion_params_5thtry",
+      "save_dir": "../../random_all_save/50epoch_randomseed_depth+depthbasedrgb_framenormal_noaug_latefusion_5thtry",
+      "save_iters": 30,
+      "tb_path": "../../../"
+    },
+    "solver": {
+      "type": "AdamW",
+      "workers": 4,
+      "weight_decay": 0.0001,
+      "base_lr": 0.0001,
+      "decay_steps": [50, 75]
+    },
+    "network":{
+      "backbone": "resnet",
+      "pretrained": true,
+      "ff_size": 1024,
+      "n_head": 8,
+      "dropout2d" : 0.1,
+      "dropout1d": 0.5,
+      "n_module": 6
+    }
+}
