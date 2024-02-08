@@ -9,6 +9,7 @@ To test models trained on 'color-mixed' or 'bare_only' on different types of glo
 For the --resume option, input the path to the pretrained model. To test different trials in the same experiment, change the '1st' part of the input to anywhere from '2nd' to '5th'.
 
 - How To Test?
+:
 After downloading the trained models from [Pretrained Link],
 you can perform the test using the following command.
 
