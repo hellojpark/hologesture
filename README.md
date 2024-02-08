@@ -8,6 +8,8 @@ To test models trained on 'color-mixed' or 'bare_only' on different types of glo
 
 For the --resume option, input the path to the pretrained model. To test different trials in the same experiment, change the '1st' part of the input to anywhere from '2nd' to '5th'.
 
+you can download pretrained c3d model using "https://drive.google.com/file/d/1NZNNcQHEqbKfUtMbxfOaXh7et8H1hVuK/view?usp=drive_link" for finetuning.
+
 - How To Test?
 :
 After downloading the trained models from "https://drive.google.com/file/d/1Z_UTJ6un7sVC5Ov6hvLCDky3mfMyZBPF/view?usp=sharing",
