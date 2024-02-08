@@ -7,6 +7,10 @@ and the ReT model referenced "https://github.com/aimagelab/TransformerBasedGestu
 After downloading the trained models from [Pretrained Link],
 you can perform the test using the following command.
 
+To test models trained on 'color-mixed' or 'bare_only' on different types of gloves other than bare hands, you can change the "crop_data_path" in the "train_bare.json" file to 'blue_crop_lst' or 'white_crop_lst'.
+
+For the --resume option, input the path to the pretrained model. To test different trials in the same experiment, change the '1st' part of the input to anywhere from '2nd' to '5th'.
+
 1) ReT/latefusion/depth+depth_rgb
  python main.py --phase="test" --hypes="hyperparameters/Hololens/train2.json" --fusionkind="late_fusion" --resume="../../../../pretrained/ReT/depth+depthbasedrgb_latefusion_1st.pth"
 
